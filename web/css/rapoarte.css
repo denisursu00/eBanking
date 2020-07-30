@@ -1,0 +1,70 @@
+.mainContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.box{
+    width: 50%;
+    height: fit-content;
+    padding: 10px;
+    background-color: #DADADA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box>h1{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 60px;
+}
+.box>p{
+    margin-bottom: 20px;
+}
+.box>table{
+    width: 70%;
+    margin-bottom: 35px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th,td{
+    text-align: left;
+    border: 2px solid #757575;
+}
+th{
+    background-color: #949494;
+}
+th,td{
+    padding: 15px 10px;
+}
+
+.box>form{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+.verticalForm{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+.verticalForm>label{
+    margin-bottom: 5px;
+}
+input[type="submit"], .verticalForm>select, .verticalForm>input{
+    height: 25px;
+}
+.buttons{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 70px;
+}
+.buttons>form>input[type=submit], .buttons>form>input[type=button]{
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px 15px;
+    width: fit-content;
+    height: fit-content;
+}

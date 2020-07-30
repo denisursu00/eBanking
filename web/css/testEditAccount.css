@@ -1,0 +1,13 @@
+#message {
+	font-style: italic;
+	font-size: 125%;
+	margin-bottom: 20px;
+}
+
+#editAccountForm table td {
+	padding: 4px;
+}
+
+#editAccountForm label {
+	font-weight: bold;
+}

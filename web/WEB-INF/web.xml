@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:web="http://java.sun.com/xml/ns/javaee"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+    id="WebApp_ID" version="2.5">
+  <display-name>Banking</display-name>
+  <servlet>
+    <servlet-name>TestEditAccountServlet</servlet-name>
+    <servlet-class>banking.web.servlets.TestEditAccountServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TestEditAccountServlet</servlet-name>
+    <url-pattern>/testEditAccount.do</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>banking.web.servlets.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>MainServlet</servlet-name>
+    <servlet-class>banking.web.servlets.MainServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MainServlet</servlet-name>
+    <url-pattern>/main.do</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>banking.web.servlets.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/logout.do</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>AccountsAdministrationServlet</servlet-name>
+    <servlet-class>banking.web.servlets.AccountsAdministrationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AccountsAdministrationServlet</servlet-name>
+    <url-pattern>/administrareCont.do</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>AccountsDisplayServlet</servlet-name>
+    <servlet-class>banking.web.servlets.AccountsDisplayServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AccountsDisplayServlet</servlet-name>
+    <url-pattern>/vizualizareConturi.do</url-pattern>
+  </servlet-mapping>
+
+  
+  <servlet>
+    <servlet-name>DepositServlet</servlet-name>
+    <servlet-class>banking.web.servlets.DepositServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DepositServlet</servlet-name>
+    <url-pattern>/alimentareCont.do</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>TransferServlet</servlet-name>
+    <servlet-class>banking.web.servlets.TransferServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TransferServlet</servlet-name>
+    <url-pattern>/transfer.do</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>ReportsServlet</servlet-name>
+    <servlet-class>banking.web.servlets.ReportsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReportsServlet</servlet-name>
+    <url-pattern>/rapoarte.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>SourceAccountsServlet</servlet-name>
+    <servlet-class>banking.web.servlets.SourceAccountsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SourceAccountsServlet</servlet-name>
+    <url-pattern>/sourceAccounts.do</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>DestinationAccountsServlet</servlet-name>
+    <servlet-class>banking.web.servlets.DestinationAccountsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DestinationAccountsServlet</servlet-name>
+    <url-pattern>/destinationAccounts.do</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>ApprobationServlet</servlet-name>
+    <servlet-class>banking.web.servlets.ApprobationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ApprobationServlet</servlet-name>
+    <url-pattern>/aprobare.do</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>CsvReportServlet</servlet-name>
+    <servlet-class>banking.web.servlets.CsvReportServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CsvReportServlet</servlet-name>
+    <url-pattern>/textReportServlet.do</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>PdfReportServlet</servlet-name>
+    <servlet-class>banking.web.servlets.PdfReportServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PdfReportServlet</servlet-name>
+    <url-pattern>/pdfReportServlet.do</url-pattern>
+  </servlet-mapping>
+
+  <filter>
+    <filter-name>LoginFilter</filter-name>
+    <filter-class>banking.web.filters.LoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>*.do</url-pattern>
+  </filter-mapping>
+
+  <filter>
+    <filter-name>AdminFilter</filter-name>
+    <filter-class>banking.web.filters.AdminFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>AdminFilter</filter-name>
+    <url-pattern>/aprobare.do</url-pattern>
+  </filter-mapping>
+
+  <context-param>
+    <param-name>authorName</param-name>
+    <param-value>Ursu Denis</param-value>
+  </context-param>
+</web-app>

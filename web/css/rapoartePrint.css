@@ -1,0 +1,39 @@
+@media print{
+    .headerHorizontalFlex>p{
+        display: none;
+    }
+    .menuDiv>nav{
+        display: none;
+    }
+    .footerContainer{
+        display: none;
+    }
+    .box>h1{
+        display: none;
+    }
+    .box>form{
+        display: none;
+    }
+    .buttons{
+        display: none;
+    }
+    .mainContainer{
+        display: block;
+        width: 100%;
+    }
+    table{
+        width: 80%;
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th,td{
+        text-align: left;
+        border: 2px solid #757575;
+    }
+    th{
+        background-color: #949494;
+    }
+    th,td{
+        padding: 15px 10px;
+    }
+}

@@ -1,0 +1,31 @@
+.mainContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.box{
+    width: 50%;
+    padding: 10px;
+    background-color: #DADADA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box>h1{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 60px;
+}
+.box>p{
+    margin-bottom: 20px;
+}
+.box>table{
+    width: 40%;
+    margin-bottom: 100px;
+}
+th{
+    text-align: left;
+}
+th,td{
+    padding: 5px;
+}

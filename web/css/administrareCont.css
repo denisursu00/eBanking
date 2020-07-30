@@ -1,0 +1,56 @@
+.mainContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.box{
+    width: 50%;
+    padding: 10px 10px 20px 10px;
+    background-color: #DADADA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box>h1{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 70px;
+}
+.content{
+    width: 50%;
+}
+.rowFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.conturi>h4{
+    margin-bottom: 25px;
+}
+.conturi>p{
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+.conturi{
+    margin-bottom: 25px;
+}
+.content>form{
+    display: flex;
+    flex-direction: column;
+}
+.formInput{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+.formInput>input[type="text"]{
+    margin-left: 120px;
+}
+.content>form>input[type="submit"]{
+    width: 30%;
+    margin-left: 30%;
+}
+.mesaj{
+    margin-left: 25%;
+    margin-bottom: 40px;
+}
